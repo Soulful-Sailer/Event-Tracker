@@ -32,3 +32,11 @@ cp config-template.json config.json
 ```
 Edit config.json and add your database details.
 Then start the server with `systemctl start event-tracker.service`
+
+## Screenshots
+### Main Page
+![Main Page Preview](previews/Main-Page.png)
+### Add Event Page
+![Add event preview](previews/Add-Page.png)
+### Edit Event Page
+![Edit event preview](previews/Edit-Page.png)
