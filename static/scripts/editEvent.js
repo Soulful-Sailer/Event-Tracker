@@ -69,18 +69,18 @@ function populateData(eventData) {
 function indicateEditing() {
 	document.querySelector(".current-page").classList.remove('current-page');
 	
-	//creates html element:
-	//<li class='current-page'><a href='event.html?id=EventID'><span class='link'>Editing</span></a></li>
+  //creates html element:
+	//<li class='current-page'><span class='link'><a href='event.html?id=EventID'>Editing</a></span></li>
 	let elem = document.createElement("li");
 	elem.classList.add('current-page');
-	let a = document.createElement('a');
-		a.href = window.location.href;
-		let span = document.createElement('span');
-			span.classList.add('link');
-			span.append('Editing');
-			a.append(span);
-		elem.append(a);
-	document.getElementById("links").append(elem); //add elem to navigation bar
+  let span = document.createElement('span');
+    span.classList.add('link');
+		span.append('Editing');
+	  let a = document.createElement('a');
+		  a.href = window.location.href;
+      span.append(a);
+		elem.append(span);
+	document.getElementById("top-links").append(elem); //add elem to navigation bar
 
 	//creates delete button
 	//<button id="delete-button">Delete</button>
