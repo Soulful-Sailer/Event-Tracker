@@ -22,6 +22,11 @@ CREATE TABLE events (
 	description text
 );
 ```
+Then create the section entries:
+```sql
+INSERT INTO sections (name) VALUES ('accepted');
+INSERT INTO sections (name) VALUES ('proposed');
+```
 ```sh
 cd /opt
 git clone https://github.com/Soulful-Sailer/Event-Tracker/
