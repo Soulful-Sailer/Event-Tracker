@@ -1,0 +1,10 @@
+[Unit]
+Description=Event Tracker Web Server
+After=network.target
+
+[Service]
+WorkingDirectory=/opt/Event-Tracker
+ExecStart=/usr/bin/node /opt/Event-Tracker/server.js
+
+[Install]
+WantedBy=multi-user.target
