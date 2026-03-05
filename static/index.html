@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" content="width=device-width, initial-scale=1" name="viewport"/>
+		<title>Event Tracker - View</title>
+		<link rel="stylesheet" href="styles/main.css"/>
+		<link rel="stylesheet" href="styles/home.css"/>
+		<script type='text/javascript' src='scripts/getDateTime.js'></script>
+		<script type='text/javascript' src='scripts/fetchFile.js'></script>
+		<script type='text/javascript' src='scripts/EventItem.js'></script>
+		<script type='text/javascript' src='scripts/loadEvents.js'></script>
+	</head>
+	<body>
+    <div id='page-container'>
+	  	<div id='header'>
+			  <div id='top-bar'>
+				  <span class='link'><a id='home-link' href='index.html'><h1>Event Tracker</h1></a></span>
+			  </div>
+			  <div class='links'>
+				  <li class='current-page'><span class='link'><a href='index.html'>View</a></span></li>
+				  <li class=''><span class='link'><a href='event.html'>Add</a></span></li>
+			  </div>
+		  </div>
+	  
+      <div id='body-container'>
+			  <h2>Accepted Plans</h2>
+			  <div id='accepted' class='event-section'>
+			  </div>
+
+			  <h2>Proposed Plans</h2>
+			  <div id='proposed' class='event-section'>
+			  </div>
+		  </div>
+      <footer class='page-footer'>
+        <div class='links'>
+          <li><span class='link'><a href='https://github.com/Soulful-Sailer/Event-Tracker'>Source Code</a></span></li>
+        </div>
+      </footer>
+    </div>
+	</body>
+</html>
